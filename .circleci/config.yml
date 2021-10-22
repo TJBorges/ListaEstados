@@ -15,9 +15,9 @@ jobs:
           command: ./gradlew testDebugUnitTest
       - store_test_results:
           path: app/build/test-results
-##      - run:
-##          name: Generate Code Coverage report and upload to coveralls
-##          command: ./gradlew jacocoFullReport coverallsJacoco
+      - run:
+          name: Generate Code Coverage report and upload to coveralls
+          command: ./gradlew jacocoFullReport coverallsJacoco
       - store_artifacts:
           path: app/build/reports
           destination: reports
